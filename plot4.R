@@ -39,4 +39,6 @@ with(dt2, plot(datetime, Sub_metering_1, type="n", xlab="", ylab="Energy sub met
 legend("topright", legend=variables, col=colors, lty="solid" )
 
 # Graph 4+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-plot(datetime, Global_reactive_power, type="l")
+plot(dt2, Global_reactive_power, type="l")
+
+dev.off()
