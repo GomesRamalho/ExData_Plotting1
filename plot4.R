@@ -40,6 +40,6 @@ for (i in seq_along(variables)) {
 legend("topright", legend=variables, col=colors, lty="solid" )
 
 # Graph 4+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-plot(dt2, Global_reactive_power, type="l")
+plot(dt2, Global_reactive_power, type="l",ylab="Global_reactive_power")
 
 dev.off()
