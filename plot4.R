@@ -23,8 +23,8 @@ hist(dt2$Global_active_power, col="red", main="Global Active Power", ylab="Globa
 
 # Graph 2+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Creates a graph with parameter "type=1" for line.
-with(dt2, plot(datetime, Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)"))
-
+with(dt2, plot(datetime, Voltage, type="l", xlab="datetime", ylab="Voltage"))
+          
 # Graph 3+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Creates a graph with each line with a color 
 with(dt2, plot(datetime, Sub_metering_1, type="n", xlab="", ylab="Energy sub metering"))
