@@ -19,7 +19,7 @@ par(mfrow=c(2, 2))
 
 # Graph 1+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Creates a histogram with title, x label and set red color to bars
-hist(dt2$Global_active_power, col="red", main="Global Active Power", ylab="Global Active Power")
+hist(dt2$Global_active_power, col="red", ylab="Global Active Power")
 
 # Graph 2+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Creates a graph with parameter "type=1" for line.
