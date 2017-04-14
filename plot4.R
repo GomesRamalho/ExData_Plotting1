@@ -18,13 +18,13 @@ png(filename='plot4.png', width=480, height=480)
 par(mfrow=c(2, 2))
 
 # Graph 1+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# Creates a histogram with title, x label and set red color to bars
-hist(dt2$Global_active_power, col="red", ylab="Global Active Power")
+# Creates a graph with title, x label and set red color to bars
+plot(dt2$Global_active_power, type="l", xlab="", ylab="Global Active Power")
 
 # Graph 2+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Creates a graph with parameter "type=1" for line.
 with(dt2, plot(datetime, Voltage, type="l", xlab="datetime", ylab="Voltage"))
-          
+
 # Graph 3+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Creates a graph with each line with a color 
 with(dt2, plot(datetime, Sub_metering_1, type="n", xlab="", ylab="Energy sub metering"))
@@ -40,6 +40,6 @@ for (i in seq_along(variables)) {
 legend("topright", legend=variables, col=colors, lty="solid" )
 
 # Graph 4+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-plot(dt2$Global_reactive_power, type="l",ylab="Global_reactive_power")
+with(dt2, plot(datetime, Global_reactive_power, type="l", xlab="datetime", ylab="Global_reactive_power"))
 
 dev.off()
