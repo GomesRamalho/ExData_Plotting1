@@ -18,8 +18,8 @@ png(filename='plot4.png', width=480, height=480)
 par(mfrow=c(2, 2))
 
 # Graph 1+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# Creates a graph with title, x label and set red color to bars
-plot(dt2$Global_active_power, type="l", xlab="", ylab="Global Active Power")
+# Creates a graph with parameter "type=1" for line.
+with(dt2, plot(datetime, Global_active_power, type="l", xlab="", ylab="Global Active Power"))
 
 # Graph 2+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Creates a graph with parameter "type=1" for line.
